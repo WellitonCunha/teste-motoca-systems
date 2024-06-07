@@ -8,7 +8,7 @@ Bem-vindo ao teste de contratação para a vaga de Desenvolvedor Back-End. Neste
 
 1. **Clone** este repositório para o seu ambiente local.
 2. Crie uma aplicação backend utilizando **Laravel**, seguindo as especificações fornecidas.
-3. Implemente as funcionalidades de **Criar**, **Ler**, **Atualizar** e **Deletar** para uma entidade especificada.
+3. Implemente as funcionalidades de **Criar**, **Ler**, **Atualizar** e **Deletar** para as entidades especificadas.
 4. Configure a aplicação para utilizar o banco de dados **PostgreSQL**.
 5. Utilize **Postman** para testar e documentar as suas APIs.
 6. Após completar o teste, crie um repositório no seu GitHub com o nome **`teste-motocaSystems-backEnd`** e suba o seu código para lá.
@@ -18,17 +18,19 @@ Bem-vindo ao teste de contratação para a vaga de Desenvolvedor Back-End. Neste
 
 - Utilize **Laravel** para construir a aplicação.
 - Utilize **PostgreSQL** como banco de dados.
-- Implemente as operações de CRUD (Criar, Ler, Atualizar, Deletar) para uma entidade, por exemplo, "Produtos".
+- Implemente as operações de CRUD (Criar, Ler, Atualizar, Deletar) para duas entidades: "Produtos" e "Categorias".
 - Certifique-se de que a API esteja bem documentada utilizando o **Postman**.
 - A aplicação deve seguir boas práticas de desenvolvimento, incluindo a utilização de migrations, seeders, controllers, models e rotas organizadas.
 
 ## 🛠️ Funcionalidades
 
-A aplicação deve incluir as seguintes operações CRUD para uma entidade "Produtos":
+A aplicação deve incluir as seguintes operações CRUD para as entidades "Produtos" e "Categorias":
+
+### Produtos
 
 1. **Criar Produto:**
    - Rota: `POST /api/produtos`
-   - Payload: `{ "nome": "Nome do Produto", "descricao": "Descrição do Produto", "preco": 100.00 }`
+   - Payload: `{ "nome": "Nome do Produto", "descricao": "Descrição do Produto", "preco": 100.00, "categoria_id": 1 }`
    
 2. **Ler Produtos:**
    - Rota: `GET /api/produtos`
@@ -40,11 +42,38 @@ A aplicação deve incluir as seguintes operações CRUD para uma entidade "Prod
    
 4. **Atualizar Produto:**
    - Rota: `PUT /api/produtos/{id}`
-   - Payload: `{ "nome": "Nome do Produto", "descricao": "Descrição do Produto", "preco": 150.00 }`
+   - Payload: `{ "nome": "Nome do Produto", "descricao": "Descrição do Produto", "preco": 150.00, "categoria_id": 2 }`
    
 5. **Deletar Produto:**
    - Rota: `DELETE /api/produtos/{id}`
    - Deleta um produto específico.
+
+### Categorias
+
+1. **Criar Categoria:**
+   - Rota: `POST /api/categorias`
+   - Payload: `{ "nome": "Nome da Categoria" }`
+   
+2. **Ler Categorias:**
+   - Rota: `GET /api/categorias`
+   - Retorna uma lista de todas as categorias.
+   
+3. **Ler Categoria por ID:**
+   - Rota: `GET /api/categorias/{id}`
+   - Retorna os detalhes de uma categoria específica.
+   
+4. **Atualizar Categoria:**
+   - Rota: `PUT /api/categorias/{id}`
+   - Payload: `{ "nome": "Nome da Categoria Atualizada" }`
+   
+5. **Deletar Categoria:**
+   - Rota: `DELETE /api/categorias/{id}`
+   - Deleta uma categoria específica.
+
+### Relacionamento Produto-Categoria
+
+- Cada produto pertence a uma categoria (`categoria_id` como chave estrangeira na tabela `produtos`).
+- Cada categoria pode ter vários produtos.
 
 ## ⏰ Prazo
 

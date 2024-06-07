@@ -19,10 +19,10 @@ A aplicação deve seguir boas práticas de desenvolvimento, incluindo a utiliza
 # 🛠️ Funcionalidades
 A aplicação deve incluir as seguintes operações CRUD para uma entidade "Produtos":
 
-Criar Produto:
+1. Criar Produto:
 Rota: POST /api/produtos
 Payload: { "nome": "Nome do Produto", "descricao": "Descrição do Produto", "preco": 100.00 }
-Ler Produtos:
+2. Ler Produtos:
 Rota: GET /api/produtos
 Retorna uma lista de todos os produtos.
 Ler Produto por ID:

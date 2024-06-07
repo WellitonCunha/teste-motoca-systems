@@ -25,13 +25,13 @@ Payload: { "nome": "Nome do Produto", "descricao": "Descrição do Produto", "pr
 2. Ler Produtos:
 Rota: GET /api/produtos
 Retorna uma lista de todos os produtos.
-Ler Produto por ID:
+3. Ler Produto por ID:
 Rota: GET /api/produtos/{id}
 Retorna os detalhes de um produto específico.
-Atualizar Produto:
+4. Atualizar Produto:
 Rota: PUT /api/produtos/{id}
 Payload: { "nome": "Nome do Produto", "descricao": "Descrição do Produto", "preco": 150.00 }
-Deletar Produto:
+5. Deletar Produto:
 Rota: DELETE /api/produtos/{id}
 Deleta um produto específico.
 

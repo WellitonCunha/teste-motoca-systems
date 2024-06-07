@@ -34,6 +34,7 @@ Payload: { "nome": "Nome do Produto", "descricao": "Descrição do Produto", "pr
 Deletar Produto:
 Rota: DELETE /api/produtos/{id}
 Deleta um produto específico.
+
 # ⏰ Prazo
 Você tem 2 dias para completar este teste a partir do momento em que o recebe. Será levado em consideração a qualidade e o tempo de entrega do teste.
 

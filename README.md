@@ -77,7 +77,7 @@ A aplicação deve incluir as seguintes operações CRUD para as entidades "Prod
 
 ## ⏰ Prazo
 
-Você tem **2 dias** para completar este teste a partir do momento em que o recebe. Será levado em consideração a qualidade e o tempo de entrega do teste.
+Você tem **3 dias** para completar este teste a partir do momento em que o recebe. Será levado em consideração a qualidade e o tempo de entrega do teste.
 
 ## 📦 Entrega
 
